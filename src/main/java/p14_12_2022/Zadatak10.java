@@ -9,10 +9,14 @@ public class Zadatak10 {
         System.out.println("unesi broj ");
         int a = s.nextInt();
 
-        if (a % 2 == 0) {
-            System.out.println("Broj je deljiv sa dva");}
-            else if (a % 3 == 0) {
-                System.out.println("Broj je deljiv sa tri");}
+        if (a % 2  == 0 && a % 3 == 0) {
+            System.out.println("Broj je deljiv i sa dva i sa tri");}
+        else if (a % 2 == 0) {
+            System.out.println("Broj je samo sa dva");}
+        else if (a % 3 == 0) {
+                System.out.println("Broj je samo sa tri");}
+
+            else System.out.println("Broj nije deljiv ni sa dva ni sa tri");
 
 
 
