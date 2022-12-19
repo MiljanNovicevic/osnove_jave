@@ -10,7 +10,7 @@ public class Zadatak1 {
         int x = s.nextInt();
         int y = 1;
         for (int i = 1; i < 10; i++) {
-            System.out.println(x +" x " + y++);
+            System.out.println(x +" x " + i + " = " + (x*i));
 
         }
     }
