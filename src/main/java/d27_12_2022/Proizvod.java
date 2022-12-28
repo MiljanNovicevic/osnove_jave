@@ -13,10 +13,8 @@ public class Proizvod {
         if (jedinica.contains("kg")){
             return this.tezina / 1000;
         }else if (jedinica.contains("t")){
-            return this.tezina / 10000;
+            return this.tezina / 1000000;
         }
-
-
 
     return 0;
     }

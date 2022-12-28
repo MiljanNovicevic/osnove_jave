@@ -21,6 +21,7 @@ public class Zadatak1 {
         proizvod1.tezina = 250;
         proizvod1.stampaj();
 
+
         Proizvod proizvod2 = new Proizvod();
         proizvod2.naziv = "Televizor";
         proizvod2.cena = 21550.2;
