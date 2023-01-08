@@ -16,7 +16,6 @@ public class XOTabla {
     private String naPotezu;
     private String inputXO;
 
-    // geteri
     public String getImeXIgraca(){
         return this.imeXIgraca;
     }
@@ -27,7 +26,6 @@ public class XOTabla {
         return this.naPotezu;
     }
 
-    // seteri
     public void setImeXIgraca(String imeXIgraca){
         this.imeXIgraca = imeXIgraca;
     }
@@ -38,7 +36,6 @@ public class XOTabla {
         this.inputXO = inputIgraca;
     }
 
-    // metode
     public void pokreniIgru(){
         this.polje1  = " ";
         this.polje2  = " ";
