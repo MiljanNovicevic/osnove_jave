@@ -16,7 +16,6 @@ public class XOTabla {
     private String naPotezu;
     private String inputXO;
 
-    // geteri
     public String getImeXIgraca(){
         return this.imeXIgraca;
     }
@@ -27,7 +26,6 @@ public class XOTabla {
         return this.naPotezu;
     }
 
-    // seteri
     public void setImeXIgraca(String imeXIgraca){
         this.imeXIgraca = imeXIgraca;
     }
@@ -38,7 +36,6 @@ public class XOTabla {
         this.inputXO = inputIgraca;
     }
 
-    // metode
     public void pokreniIgru(){
         this.polje1  = " ";
         this.polje2  = " ";
@@ -52,20 +49,19 @@ public class XOTabla {
         this.naPotezu = "X";                //uvek prvi igra igrac X
     }
 
+
     public void stampaj(){
         System.out.println(" " + this.polje1 + " | " + this.polje2 + " | " + this.polje3 + " " + "\n" +
         " " + this.polje4 + " | " + this.polje5 + " | " + this.polje6 + " " + "\n" +
         " " + this.polje7 + " | " + this.polje8 + " | " + this.polje9 + " ");
+
 
         if (!popunjenaTabla() && !pobednikX() && !pobednikO()) {
             System.out.println("Igrac X: " + this.imeXIgraca);
             System.out.println("Igrac O: " + this.imeOIgraca);
             System.out.println("Na potezu je igrac " + this.naPotezu);
         }
-
-
     }
-
     public boolean poljePrazno (int izabranoPolje) {
         if(izabranoPolje == 1 && this.polje1.equals(" ")){
             return true;
@@ -132,9 +128,7 @@ public class XOTabla {
 
         } else if (izabranoPolje == 9) {
             this.polje9 = this.inputXO;
-
         }
-
 
     }
     public boolean popunjenaTabla (){
