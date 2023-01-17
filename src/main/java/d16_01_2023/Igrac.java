@@ -40,7 +40,7 @@ public class Igrac extends Osoba {
     @Override
     public void stampaj(){
         System.out.println("IGRAC:");
-        System.out.println(this.imeIPrezime + ", " + this.jmbg + ", " + this.godRodjenja);
+        super.stampaj();
         System.out.println("broj igraca " + this.brojIgraca);
         System.out.println("pozicija: " + this.pozicija);
         System.out.println("kapiten: " + this.kapiten);

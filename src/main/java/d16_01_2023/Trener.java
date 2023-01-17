@@ -14,7 +14,7 @@ public class Trener extends Osoba{
     @Override
     public void stampaj(){
         System.out.println("TRENER:");
-        System.out.println(this.imeIPrezime + ", " + this.jmbg + ", " + this.godRodjenja);
+        super.stampaj();
         System.out.println("Godine iskustva " + this.godineIskustva);
         System.out.println("Tip trenera: " + this.tipTrenera);
         System.out.println();
